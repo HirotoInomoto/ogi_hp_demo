@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link rel="stylesheet" href="../css/info.css">
+  </head>
+  
+  <body>
+  
+    <header><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Disney_wordmark.svg/1200px-Disney_wordmark.svg.png"></header>
+  
+    <div class="main">
+      <div class="map__frame mousedragscrollable">
+        <div id="map" class="map">
+          <div class="map__wrapper">
+            <img id="map__image" class="map__image" src="https://img2.lancers.jp/menu/77800/216140/863cf96894a8da450bc85b61deb02d09406d01e150cd2d05e78933e79bfbc629/19766808_610_0.jpg">
+            <!-- Djangoの組み込みforでDataBaseから生成 -->
+            <!-- PCならaタグ、mobileならdivタグ -->
+            <div id="mark_1_1" class="mark" onmouseenter="popupActivate(document.getElementById('popup_1_1'))" onmouseleave="popupDeactivate(document.getElementById('popup_1_1'))"></div>
+            <div id="mark_2_1" class="mark" onmouseenter="popupActivate(document.getElementById('popup_2_1'))" onmouseleave="popupDeactivate(document.getElementById('popup_2_1'))"></div>
+            <div id="mark_3_1" class="mark" onmouseenter="popupActivate(document.getElementById('popup_3_1'))" onmouseleave="popupDeactivate(document.getElementById('popup_3_1'))"></div>
+          </div>
+        </div>
+        <input type="range" name="range" min="1" max="2" value="1" step="0.1">
+      </div>
+      <div class="tile__frame">
+        <!-- Djangoの組み込みforでDataBaseから生成 -->
+        <div class="tile tile-1">アート<br>紹介</div>
+        <div class="tile tile-2">飲食店<br>紹介</div>
+        <div class="tile tile-3">宿泊施設<br>紹介</div>
+        <div class="tile tile-4">猫<br>紹介</div>
+      </div>
+    </div>
+  
+    <footer>footer</footer>
+  
+    <div id="popup">
+      <!-- Djangoの組み込みforでDataBaseから生成 -->
+      <div class="upblock popup_1" id="popup_1_1">
+        <div class="popup__title">
+          <p class="popup__icon popup__icon-1">アート</p>
+          <p class="popup__name">穂村銀行</p>
+        </div>
+        <p class="popup__text">クリックして詳細へ</p>
+        <a href="" class="popup__link">詳細はこちら</a>
+      </div>
+      <div class="upblock popup_2" id="popup_2_1">
+        <div class="popup__title">
+          <p class="popup__icon popup__icon-2">飲食店</p>
+          <p class="popup__name">ほむら薬局</p>
+        </div>
+        <p class="popup__text">クリックして詳細へ</p>
+        <a href="" class="popup__link">詳細はこちら</a>
+      </div>
+      <div class="upblock popup_3" id="popup_3_1">
+        <div class="popup__title">
+          <p class="popup__icon popup__icon-3">宿泊施設</p>
+          <p class="popup__name">はずみ保育園</p>
+        </div>
+        <p class="popup__text">クリックして詳細へ</p>
+        <a href="" class="popup__link">詳細はこちら</a>
+      </div>
+    </div>
+  
+  </body>
+  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="../js/info.js"></script>
+
+  </html>
