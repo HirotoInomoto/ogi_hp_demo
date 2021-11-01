@@ -67,8 +67,8 @@ if(userAgent == "pc"){
 }else{
   $(function() {
     $(".mark").css({
-        "height": imageWidth / 20 + "px",
-        "width": imageWidth / 20 + "px",
+        "height": imageWidth / 28 + "px",
+        "width": imageWidth / 28 + "px",
     });
   });
   window.addEventListener("DOMContentLoaded", () => {
