@@ -74,12 +74,20 @@ footer{
 .mark{
   position: absolute;
   cursor: pointer;
+  border-radius: 50%;
 }
 
+.mark_1{background-color: #cff;}
+.mark_2{background-color: #fcf;}
+.mark_3{background-color: #ffc;}
+.mark_4{background-color: #fcc;}
+
 /* Django組み込みでインラインで挿入 */
-#mark_1_1{top: 13.5%;left: 48%;}
-#mark_2_1{top: 33%;left: 28%;}
-#mark_3_1{top: 72.5%;left: 50%;}
+#mark_1_1{top: 77%;left: 54.5%;}
+#mark_1_2{top: 19%;left: 44%;}
+#mark_2_1{top: 15.5%;left: 36.5%;}
+#mark_2_2{top: 26%;left: 42.5%;}
+#mark_3_1{top: 73.5%;left: 55%;}
 
 #popup{
   position: absolute;

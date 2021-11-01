@@ -37,8 +37,8 @@ function popupDeactivate(elem){
 if(userAgent == "pc"){
   $(function() {
     $(".mark").css({
-        "height": imageWidth / 25 + "px",
-        "width": imageWidth / 25 + "px",
+        "height": imageWidth / 50 + "px",
+        "width": imageWidth / 50 + "px",
     });
   });
   $(function(){
@@ -72,7 +72,6 @@ if(userAgent == "pc"){
     });
   });
   window.addEventListener("DOMContentLoaded", () => {
-    console.log('2');
     document.querySelector('.map__wrapper').style.height = imageHeight + "px";
     document.querySelector('.map__wrapper').style.width = imageWidth + "px";
   })
