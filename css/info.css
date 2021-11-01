@@ -175,6 +175,10 @@ input[type="range"] {
 .tile-3{background-color: #ffc;}
 .tile-4{background-color: #fcc;}
 
+.zoom-mordal{
+  display: none;
+}
+
 @media screen and (max-width:1020px) { 
   .main{
     flex-flow: column;
@@ -247,7 +251,39 @@ input[type="range"] {
     bottom: 0;
   }
 
-
+  .zoom-mordal{
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 200;
+  }
+  .zoom-mordal__window{
+    margin: auto;
+    width: 60vw;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: solid 8px #000;
+    border-radius: 24px;
+    padding: 32px;
+  }
+  .zoom-mordal__text{
+    font-size: 32px;
+  }
+  .zoom-mordal__button{
+    font-size: 28px;
+    color: #1a0dab;
+    text-align: center;
+    margin: 20px 0px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
 
   input[type="range"] {

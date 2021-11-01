@@ -85,5 +85,10 @@ document.body.addEventListener("touchstart", function(e){
 document.body.addEventListener("touchmove", function(e){
   if (e.touches && e.touches.length > 1) {
     e.preventDefault();
+    document.getElementById('zoom-mordal').style.display = "block";
   }
 }, {passive: false});
+
+document.getElementById('zoom-mordal__button').addEventListener('click', ()=>{
+  document.getElementById('zoom-mordal').style.display = "none";
+})
